@@ -600,6 +600,7 @@ opacity: 0;
     }
     .navbar-light .navbar-toggler {
         background-color: #fffdfd;
+        margin-right: -12px;
     }
     .had-top {
         background-position: center;
