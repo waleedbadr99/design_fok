@@ -74,7 +74,6 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    position: relative;
 }
 .porfile .pro-box .pro-img {
     width: 30%;
@@ -83,7 +82,19 @@ h2 {
 .porfile .pro-box .pro-img img {
     border-radius: 5px;
 }
-.porfile .pro-box .pro-img .over-img {
+.porfile .pro-box .pro-img .border {
+    width: 100%;
+    height: 80%;
+    border: 8px solid #333 !important;
+    border-radius: 5px;
+}
+.porfile .pro-box .pro-img  .img-layer {
+    position: absolute;
+    top: 4%;
+    left: 7%;
+    overflow: hidden;
+}
+.porfile .pro-box .pro-img .img-layer .over-img {
     background: rgba(0, 0, 0, 0.57) none repeat scroll 0 0;
     height: 100%;
     left: 0;
@@ -96,38 +107,39 @@ h2 {
     visibility: hidden;
     -webkit-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
+    overflow: hidden;
 }
-.porfile .pro-box .pro-img:hover .over-img {
+.porfile .pro-box .pro-img .img-layer:hover .over-img {
     border-radius: 5px;
-    height: 88%;
+    height: 100%;
     width: 360px;
     opacity: 1;
-    bottom: 12%;
+    bottom: 0%;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     visibility: visible;
 }
-.porfile .pro-box .pro-img .social-icon {
+.porfile .pro-box .pro-img .img-layer .over-img .social-icon {
     left: 50%;
     position: absolute;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
 }
-.porfile .pro-box .pro-img .social-icon li {
+.porfile .pro-box .pro-img .img-layer .over-img .social-icon li {
     display: inline-block;
 }
-.porfile .pro-box .pro-img .social-icon li a {
+.porfile .pro-box .pro-img .img-layer .over-img .social-icon li a {
   display: block;
   font-size: 20px;
   height: 20px;
   width: 32px;
   color: #fff;
 }
-.porfile .pro-box .pro-img .social-icon li a:hover {
+.porfile .pro-box .pro-img .img-layer .over-img .social-icon li a:hover {
   color: #ff305b;
 }
 .porfile .pro-box .pro-text {
-    width: 50%;
+    width: 45%;
 }
 .porfile .pro-box .pro-text h2 {
     font-size: 40px;
