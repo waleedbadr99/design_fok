@@ -669,6 +669,7 @@ opacity: 0;
 }
 .contact-us .from-cont .one:nth-child(3) textarea {
     width: 87% !important;
+    padding: 10px;
 }
 }
 
